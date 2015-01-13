@@ -1,0 +1,9 @@
+[Unit]
+Description=install IPA server if not installed already
+
+[Service]
+Type=oneshot
+ExecStart=/start.sh
+
+[Install]
+WantedBy=multi-user.target
